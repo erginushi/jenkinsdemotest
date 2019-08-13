@@ -18,6 +18,7 @@ public class DockerClass {
       User user = new User();
       user.setFirstName(name);
       user.setUsername(name + "User");
+      user.setLastName(name.toUpperCase());
       return new ResponseEntity<>(user, HttpStatus.valueOf(statusCode));
   }
   
